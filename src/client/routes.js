@@ -3,12 +3,15 @@ import HomePage from './pages/Home';
 import LoginPage from './pages/Login';
 import RegisterPage from './pages/Register';
 import FourOhFourPage from './pages/FourOhFourPage';
+
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 export const routes = [
 	{ path: "/", exact: true, component: HomePage },
 	{ path: "/login", component: LoginPage },
 	{ path: "/register", exact: true, component: RegisterPage },
+//	{ path: "/feed", exact: true, component: FeedPage},
+	
 	//PLOP_INSERT_ROUTE
 	{
 		//This route must always be last, as it matches any route, but order matters

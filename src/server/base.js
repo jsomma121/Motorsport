@@ -1,14 +1,19 @@
-import Rebase from 're-base';
-import baseApp from 'firebase/app';
-import 'firebase/database';
+var firebase = require("firebase/app");
+require("firebase/auth");
+require("firebase/database");
 
-export const firebase = baseApp.initializeApp({
-    apiKey: "AIzaSyA0CvuZ5-FYd_Jd5ZX5QVuAKvHvSZ01Tsk",
-    authDomain: "round-exchange-195921.firebaseapp.com",
-    databaseURL: "https://round-exchange-195921.firebaseio.com",
-    storageBucket: "round-exchange-195921.appspot.com",
-    messagingSenderId: "40277353978"
-});
+
+var config = {
+    apiKey: "AIzaSyDl7m-WrkJlFbRDDPtNmsZRROP_6CyZn0w",
+    authDomain: "motorsport-680f2.firebaseapp.com",
+    databaseURL: "https://motorsport-680f2.firebaseio.com",
+    projectId: "motorsport-680f2",
+    storageBucket: "motorsport-680f2.appspot.com",
+    messagingSenderId: "724013034664"
+  };
+
+export const dataBase = firebase.initializeApp(config);
+
 
 
     // const auth = firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
